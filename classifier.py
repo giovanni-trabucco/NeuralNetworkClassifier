@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 import torch.optim as optim
-from networkz import NonConvolutionalNet, ConvolutionalNet
+from network_definitions import NonConvolutionalNet, ConvolutionalNet
 
 train_dataset = torchvision.datasets.FashionMNIST('classifier_data', train=True, download=True)
 test_dataset  = torchvision.datasets.FashionMNIST('classifier_data', train=False, download=True)
@@ -207,7 +207,7 @@ parameters = {
 }
 
 
-from cv3 import ClassificationCV
+from cross_validation import ClassificationCV
 
 layers = [784, 64, 32, 10]
 cv = ClassificationCV(layers ,parameters)
