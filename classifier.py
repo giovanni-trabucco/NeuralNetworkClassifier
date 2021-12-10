@@ -80,7 +80,7 @@ net.to(device)
 net_settings = {
                 'lr' : 1e-3,
                 'epochs': 100,
-                'optimizer': optim.SGD,
+                'optimizer': optim.Adam,
                 'loss_fn' : nn.CrossEntropyLoss()
                 }
 
