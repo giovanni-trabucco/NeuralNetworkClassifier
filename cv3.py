@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
-from networkz import RegressionNet, NonConvolutionalNet, ConvolutionalNet
+from network_definitions import RegressionNet, NonConvolutionalNet, ConvolutionalNet
 from colorama import Fore,Style #so the print below is easier to read
 import itertools as it
 
